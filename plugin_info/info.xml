@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <id>hipservNas</id>
+    <name>Hipserv Nas</name>
+    <description>Gestion des NAS équipés du logiciel Hipserv</description>
+    <icon>fa fa-keyboard-o</icon>
+    <licence>AGPL</licence>
+    <author>Christophe Jordens</author>
+    <installation>Aucune</installation>
+    <require>2.4.6</require>
+    <category>multimedia</category>
+    <version>0.0.0</version>
+</info>
