@@ -26,6 +26,35 @@ class hipservNasService
     public $userURI = '';
     public $rootMediaSources = array();
 
+    public function setDeviceManufacturer($manufacturerCode)
+    {
+        switch ($manufacturerCode) {
+            case 1:
+                $this->$cloudServerAddress = 'https://www.lifecloudmedion.com';
+                break;
+
+            case 2:
+                $this->$cloudServerAddress = 'https://www.seagateshare.com';
+                break;
+            
+            case 3:
+                $this->$cloudServerAddress = 'https://www.mystora.com';
+                break;
+
+            case 4:
+                $this->$cloudServerAddress = 'https://www.myhipserv.com';
+                break;
+
+            case 5:
+                $this->$cloudServerAddress = 'https://www.myverbatim.com';
+                break;
+
+            default:
+                # code...
+                break;
+        }
+    }
+
     public function logDebug($message)
     {
         log::add('hipservNas', 'debug', $message);

@@ -97,6 +97,18 @@ foreach ($eqLogics as $eqLogic) {
                 </div>
               </div>
               <div class="form-group">
+                <label class="col-sm-3 control-label">{{Marque du disque}}</label>
+                <div class="col-sm-3">
+                  <select class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="manufacturer">
+                    <option value="1">Medion</option>
+                    <option value="2">Seagate</option>
+                    <option value="3">Netgear stora</option>
+                    <option value="4">Hipserv</option>
+                    <option value="5">Verbatim</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
                 <label class="col-sm-3 control-label">{{Nom du disque sur le serveur distant}}</label>
                 <div class="col-sm-3">
                   <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="nasName" ></input>

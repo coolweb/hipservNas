@@ -65,6 +65,12 @@ class hipservNas extends eqLogic
         if($this->getConfiguration('nasName') != null)
         {
             $hipservServiceObj = new hipservNasService();
+            $manufacturerCode = $this->getEqLogic()->getConfiguration('manufacturer');
+            if($manufacturerCode !== null)
+            {
+                $hipservServiceObj->setDeviceManufacturer($manufacturerCode);
+            }
+
             $errorMessage = $this->loginToHipservServer($hipservServiceObj);
 
             if ($errorMessage != '') {
@@ -207,6 +213,13 @@ class hipservNasCmd extends cmd
         log::add('hipservNas', 'debug', "command received: " . $this->getLogicalId());
 
         $hipservServiceObj = new hipservNasService();
+        
+        $manufacturerCode = $this->getEqLogic()->getConfiguration('manufacturer');
+        if($manufacturerCode !== null)
+        {
+            $hipservServiceObj->setDeviceManufacturer($manufacturerCode);
+        }
+
         $hipservNasDevice = $this->getEqLogic();
         $hipservNasDevice->loginToHipservServer($hipservServiceObj);
 
