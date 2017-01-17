@@ -30,23 +30,23 @@ class hipservNasService
     {
         switch ($manufacturerCode) {
             case 1:
-                $this->$cloudServerAddress = 'https://www.lifecloudmedion.com';
+                $this->cloudServerAddress = 'https://www.lifecloudmedion.com';
                 break;
 
             case 2:
-                $this->$cloudServerAddress = 'https://www.seagateshare.com';
+                $this->cloudServerAddress = 'https://www.seagateshare.com';
                 break;
             
             case 3:
-                $this->$cloudServerAddress = 'https://www.mystora.com';
+                $this->cloudServerAddress = 'https://www.mystora.com';
                 break;
 
             case 4:
-                $this->$cloudServerAddress = 'https://www.myhipserv.com';
+                $this->cloudServerAddress = 'https://www.myhipserv.com';
                 break;
 
             case 5:
-                $this->$cloudServerAddress = 'https://www.myverbatim.com';
+                $this->cloudServerAddress = 'https://www.myverbatim.com';
                 break;
 
             default:

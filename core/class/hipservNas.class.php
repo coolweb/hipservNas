@@ -65,7 +65,7 @@ class hipservNas extends eqLogic
         if($this->getConfiguration('nasName') != null)
         {
             $hipservServiceObj = new hipservNasService();
-            $manufacturerCode = $this->getEqLogic()->getConfiguration('manufacturer');
+            $manufacturerCode = $this->getConfiguration('manufacturer');
             if($manufacturerCode !== null)
             {
                 $hipservServiceObj->setDeviceManufacturer($manufacturerCode);
